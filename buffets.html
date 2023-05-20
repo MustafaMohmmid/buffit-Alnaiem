@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النعيم-قسم البوفيهات</title>
+    <link rel="shortcut icon" type="image" href="imegs/icon/favicon.ico">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/alnaiem.css">
+    <!-- Font Awesone -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Googil Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body style="background: #ffedbb;">
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                 <!-- Profile image & text -->
+            <div class="profile">
+                <a href="index.html" class="lobar">
+                  <img src="imegs/non-background/logo.png" alt="">
+                </a>
+                <h3>مطابخ ومطاعم النعيم</h3>
+                <p>للحفلات والمناسبات</p>
+            </div>
+            </div>
+        </div>
+        <!-- Select Nav   -->
+        <div class="navselect">
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span class="on">العربية</span>
+                <span class="off" >En</span>
+            </div>
+            <p class="line">&nbsp;</p>
+            <a href="#" class="sign">
+                <button class="place-order place-order--default">
+                    <div class="default-text">تسجيل الدخول</div>
+                </button>
+            <a href="https://wa.me/c/966503612583"
+                target="_blank" class="order">
+                <button class="place-order place-order--default">
+                    <div class="default-text">أحجز الأن</div>
+                </button>
+            </a>
+        </div>
+    </div> 
+    <!-- Start Banner  -->
+    <div class="bu-banner">
+        <div class="container">
+            <div class="bu-to-banner">
+                <!-- Next & previous buttons  -->
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div> 
+        </div>
+    </div>
+</div> 
+<!-- Nav-menu  -->
+<div class="nav-menu">
+    <div class="container">
+        <div class="navbar">
+             <!-- Menu item  -->
+                <ul class="menu">
+                    <li>
+                        <a href="index.html" class="#">
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                            <span class="item">الأطباق العربية المميزة للذبائح</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">قسم البوفيهات</span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-user-friends"></i></span>
+                            <span class="item">الأطباق الجانبية</span>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-cog"></i></span>
+                            <span class="item">منيو الافطار</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                            <span class="item">ذبائح النعيم</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-database"></i></span>
+                            <span class="item">قصتنا</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-chart-line"></i></span>
+                            <span class="item">فروعنا</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-user-shield"></i></span>
+                            <span class="item">تواصل معنا</span>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</div>
+<!--End Nav-menu  -->
+<div class="buffet-slideshow">
+    <div class="buffet-container">
+        <div class="mySlides fade">
+            <div class="img-slidre" style="background-image: url(imegs/img-buffit/DSC_9824.jpg); width: 100%;"></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="img-slidre" style="background-image: url(imegs/img-buffit/DSC_0377.jpg); width: 100%;"></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="img-slidre" style="background-image: url(imegs/img-buffit/DSC_0361.jpg); width: 100%;"></div>
+        </div>
+        <!-- The Next & Prev \Icon -->
+        <a class="buff-prev" onclick="plusSlides(-1)">❮</a>
+        <a class="buff-next" onclick="plusSlides(1)">❯</a>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class=".buff-dot" onclick="currentSlide(1)"></span>
+            <span class=".buff-dot" onclick="currentSlide(2)"></span>
+            <span class=".buff-dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+</div>    
+    <!-- End Buffet-Slideshow -->
+    <!-- Start Buffet-Card -->
+    <!-- Script (Js) SliderShow   -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>     
+ <div class="buffet-card">
+        <div class="container">
+            <div class="cards">
+                <div class="card">
+                <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_0429.jpg); width: 100%;"></div>
+                    <a href="#"><h1>البوفية الفضي</h1></a>
+                    <!-- <p class="price">$19.99</p> -->
+                    <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
+                    <p><button>احجز الان</button></p>
+                </div>
+                <div class="card">
+                    <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_9858.jpg); width: 100%;"></div>
+                        <a href="#"><h1 style="background-color: #b69859;">البوفية الذهبي</h1></a>
+                        <!-- <p class="price">$19.99</p> -->
+                        <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
+                        <p><button>احجز الان</button></p>
+                    </div>
+                <div class="card">
+                    <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_0445.jpg); background-size: 195%;
+                    background-position-x: right; background-position-y: top; width: 100%;"></div>
+                        <a href="#"><h1 style="background-color: #e6e7e8;">البوفية الماسي</h1></a>
+                        <!-- <p class="price">$19.99</p> -->
+                        <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
+                        <p><button>احجز الان</button></p>
+                    </div>
+                <div class="card">
+                    <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_9835.jpg); width: 100%;"></div>
+                        <a href="#"><h1 style="background-color: #551911;">البوفية المميزة</h1></a>
+                        <!-- <p class="price">$19.99</p> -->
+                        <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
+                        <p><button>احجز الان</button></p>
+                    </div>
+                <div class="card">
+                    <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_0429.jpg); width: 100%;"></div>
+                        <a href="#"><h1 style="background-color: #4fa3da;">الركن البحري</h1></a>
+                        <!-- <p class="price">$19.99</p> -->
+                        <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
+                        <p><button>احجز الان</button></p>
+                    </div>
+                <div class="card">
+                    <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_9870.jpg); width: 100%;"></div>
+                        <a href="#"><h1 style="background-color: #fdcb9b;">بوفية الحلويات</h1></a>
+                        <!-- <p class="price">$19.99</p> -->
+                        <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
+                        <p><button>احجز الان</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+ </div>  
+ <footer class="buffet-f">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- <a href="#" class="logo">النعيم</a> -->
+                     <img src="../Leon _ Template One_files/logo.png" alt="" class="logo">
+                    <p>يسعدنا تواصلكم معنا على الرقم الموحد</p>
+                    <h4>920022633</h4>
+                </div>
+                <!-- <div class="col">
+                    <h3>الفرع الرئيسي <div class="underline"><span></span></div></h3>
+                    <p>شارع الامير سلطان بن سلمان</p>
+                    <p>جدة, حي النزهه</p>
+                    <p class="email-id">alnaiemkichen@gmail.com</p>
+                    <h4>0505605022</h4>
+                </div>
+                <div class="col">
+                    <h3>قائمة الطعام<div class="underline"><span></span></div></h3>
+                    <ul>
+                        <li><a href="#">قائمة الطبخ</a></li>
+                        <li><a href="#">البوفيهات</a></li>
+                        <li><a href="#">الاطباق الجانبية</a></li>
+                        <li><a href="#">يوجد لدينا خرفان</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>النشرة البريدية<div class="underline"><span></span></div></h3>
+                    <p>اشترك معنا ليصلك كل جديد عن منتجتنا والعروض الجديد</p>
+                    <form >
+                        <i class="far fa-envelope"></i>
+                        <input type="email" placeholder="@سجل ايملك هنا" required>
+                        <button type="submit"><i class="fa-solid fa-arrow-left"></i></button>
+                    </form> -->
+                    <div class="f-social">
+                    <a href="href=//www.instagram.com/alnaiem.sa/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="href=//twitter.com/alnaiemsa?lang=ar" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="href=//www.facebook.com/alnaiem.sa/"  target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="last">مطابخ ومطاعم النعيم للحفلات والمناسبات. 2023 ©</p>
+        </div>
+    </footer>
+</body>
+</html>
